@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D8C4B31B17329696000CC6A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C4B31A17329696000CC6A4 /* Foundation.framework */; };
+		D8C4B32617329696000CC6A4 /* Unlock2Send.mm in Sources */ = {isa = PBXBuildFile; fileRef = D8C4B32517329696000CC6A4 /* Unlock2Send.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D8C4B31717329696000CC6A4 /* Unlock2Send.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = Unlock2Send.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8C4B31A17329696000CC6A4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D8C4B31F17329696000CC6A4 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		D8C4B32017329696000CC6A4 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		D8C4B32217329696000CC6A4 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		D8C4B32317329696000CC6A4 /* Unlock2Send-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Unlock2Send-Prefix.pch"; sourceTree = "<group>"; };
+		D8C4B32417329696000CC6A4 /* Unlock2Send.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = Unlock2Send.xm; sourceTree = "<group>"; };
+		D8C4B32517329696000CC6A4 /* Unlock2Send.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Unlock2Send.mm; sourceTree = "<group>"; };
+		D8C4B32A17329696000CC6A4 /* Unlock2Send.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Unlock2Send.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/Unlock2Send.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8C4B31317329696000CC6A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C4B31B17329696000CC6A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D8C4B30C17329696000CC6A4 = {
+			isa = PBXGroup;
+			children = (
+				D8C4B31C17329696000CC6A4 /* Unlock2Send */,
+				D8C4B31917329696000CC6A4 /* Frameworks */,
+				D8C4B31817329696000CC6A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D8C4B31817329696000CC6A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8C4B31717329696000CC6A4 /* Unlock2Send.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8C4B31917329696000CC6A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8C4B31A17329696000CC6A4 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8C4B31C17329696000CC6A4 /* Unlock2Send */ = {
+			isa = PBXGroup;
+			children = (
+				D8C4B32417329696000CC6A4 /* Unlock2Send.xm */,
+				D8C4B32517329696000CC6A4 /* Unlock2Send.mm */,
+				D8C4B31D17329696000CC6A4 /* Package */,
+				D8C4B32117329696000CC6A4 /* Supporting Files */,
+			);
+			path = Unlock2Send;
+			sourceTree = "<group>";
+		};
+		D8C4B31D17329696000CC6A4 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				D8C4B31E17329696000CC6A4 /* DEBIAN */,
+				D8C4B32717329696000CC6A4 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		D8C4B31E17329696000CC6A4 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				D8C4B31F17329696000CC6A4 /* control.txt */,
+				D8C4B32017329696000CC6A4 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		D8C4B32117329696000CC6A4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8C4B32217329696000CC6A4 /* PackageVersion.plist */,
+				D8C4B32317329696000CC6A4 /* Unlock2Send-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8C4B32717329696000CC6A4 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D8C4B32817329696000CC6A4 /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		D8C4B32817329696000CC6A4 /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				D8C4B32917329696000CC6A4 /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		D8C4B32917329696000CC6A4 /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				D8C4B32A17329696000CC6A4 /* Unlock2Send.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D8C4B31417329696000CC6A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D8C4B31617329696000CC6A4 /* Unlock2Send */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8C4B32D17329696000CC6A4 /* Build configuration list for PBXNativeTarget "Unlock2Send" */;
+			buildPhases = (
+				D8C4B31117329696000CC6A4 /* ShellScript */,
+				D8C4B31217329696000CC6A4 /* Sources */,
+				D8C4B31317329696000CC6A4 /* Frameworks */,
+				D8C4B31417329696000CC6A4 /* Headers */,
+				D8C4B31517329696000CC6A4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Unlock2Send;
+			productName = Unlock2Send;
+			productReference = D8C4B31717329696000CC6A4 /* Unlock2Send.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8C4B30D17329696000CC6A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = D8C4B31017329696000CC6A4 /* Build configuration list for PBXProject "Unlock2Send" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D8C4B30C17329696000CC6A4;
+			productRefGroup = D8C4B31817329696000CC6A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8C4B31617329696000CC6A4 /* Unlock2Send */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D8C4B31117329696000CC6A4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		D8C4B31517329696000CC6A4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8C4B31217329696000CC6A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8C4B32617329696000CC6A4 /* Unlock2Send.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D8C4B32B17329696000CC6A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		D8C4B32C17329696000CC6A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		D8C4B32E17329696000CC6A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Unlock2Send/Unlock2Send-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		D8C4B32F17329696000CC6A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Unlock2Send/Unlock2Send-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8C4B31017329696000CC6A4 /* Build configuration list for PBXProject "Unlock2Send" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C4B32B17329696000CC6A4 /* Debug */,
+				D8C4B32C17329696000CC6A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8C4B32D17329696000CC6A4 /* Build configuration list for PBXNativeTarget "Unlock2Send" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C4B32E17329696000CC6A4 /* Debug */,
+				D8C4B32F17329696000CC6A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8C4B30D17329696000CC6A4 /* Project object */;
+}
