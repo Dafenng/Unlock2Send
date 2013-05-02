@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D8C4B31B17329696000CC6A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C4B31A17329696000CC6A4 /* Foundation.framework */; };
 		D8C4B32617329696000CC6A4 /* Unlock2Send.mm in Sources */ = {isa = PBXBuildFile; fileRef = D8C4B32517329696000CC6A4 /* Unlock2Send.mm */; };
+		D8C4B331173296C0000CC6A4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C4B330173296C0000CC6A4 /* UIKit.framework */; };
+		D8C4B333173296CA000CC6A4 /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D8C4B332173296CA000CC6A4 /* libsubstrate.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		D8C4B32417329696000CC6A4 /* Unlock2Send.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = Unlock2Send.xm; sourceTree = "<group>"; };
 		D8C4B32517329696000CC6A4 /* Unlock2Send.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Unlock2Send.mm; sourceTree = "<group>"; };
 		D8C4B32A17329696000CC6A4 /* Unlock2Send.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Unlock2Send.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/Unlock2Send.plist; sourceTree = "<group>"; };
+		D8C4B330173296C0000CC6A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D8C4B332173296CA000CC6A4 /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = /opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +32,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8C4B333173296CA000CC6A4 /* libsubstrate.dylib in Frameworks */,
+				D8C4B331173296C0000CC6A4 /* UIKit.framework in Frameworks */,
 				D8C4B31B17329696000CC6A4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +61,8 @@
 		D8C4B31917329696000CC6A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D8C4B332173296CA000CC6A4 /* libsubstrate.dylib */,
+				D8C4B330173296C0000CC6A4 /* UIKit.framework */,
 				D8C4B31A17329696000CC6A4 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -283,10 +291,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Unlock2Send/Unlock2Send-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = "";
+				iOSOpenDevDevice = 192.168.177.22;
 				iOSOpenDevInstallOnAnyBuild = NO;
 				iOSOpenDevInstallOnProfiling = YES;
 				iOSOpenDevRespringOnInstall = YES;
@@ -303,10 +315,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Unlock2Send/Unlock2Send-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = "";
+				iOSOpenDevDevice = 192.168.177.22;
 				iOSOpenDevInstallOnAnyBuild = NO;
 				iOSOpenDevInstallOnProfiling = YES;
 				iOSOpenDevRespringOnInstall = YES;
